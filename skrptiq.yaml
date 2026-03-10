@@ -1,0 +1,37 @@
+name: "rfaq-generation-flow"
+display_name: "RFAQ Generation Flow"
+description: "Generate Amazon-style RFAQ (Risks and Frequently Asked Questions) documents for product decisions, press releases, and launches"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/rfaq-generation-flow"
+
+category: "product-manager"
+tags:
+  - "rfaq"
+  - "risk-analysis"
+  - "amazon-working-backwards"
+  - "product-launch"
+  - "decision-making"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "product-requirements"
+    - "business-strategy"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14
