@@ -5,7 +5,7 @@ title: Counter-Argument Construction
 description: "Building rigorous counter-arguments and mitigations for identified risks and objections"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: rfaq-writing-guide
     type: references

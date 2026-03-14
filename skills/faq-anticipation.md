@@ -5,7 +5,7 @@ title: FAQ Anticipation
 description: "Anticipating likely questions from customers, stakeholders, and internal teams about product decisions"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
 metadata:
   estimated_duration: "5-8 minutes"

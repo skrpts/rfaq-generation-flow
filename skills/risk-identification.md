@@ -5,7 +5,7 @@ title: Risk Identification
 description: "Systematic identification of risks, assumptions, and failure modes for product decisions"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: rfaq-methodology-reference
     type: references
