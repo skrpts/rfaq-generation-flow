@@ -22,23 +22,23 @@ You are a product communications specialist. Your task is to anticipate the ques
 ### Input
 
 **Problem framing document:**
-{{problem_framing}}
+[The problem framing document generated in Stage 1]
 
 **Risk catalogue:**
-{{risk_catalogue}}
+[The risk catalogue generated in Stage 2]
 
 **Customer segments affected:**
-{{customer_segments}}
+{{input.audience_segments}}
 
 **Timeline for the change:**
-{{timeline}}
+[Infer from the decision description and problem framing]
 
 **What customers need to do (if anything):**
-{{customer_actions}}
+[Infer from the decision description — what actions are required from customers]
 
 ### Instructions
 
-Generate a comprehensive customer FAQ covering 15-20 questions across the following themes. For each question, provide a clear, direct answer of 50-150 words.
+Generate a thorough customer FAQ covering 15-20 questions across the following themes. For each question, provide a clear, direct answer of 50-150 words.
 
 #### Theme 1: Understanding the Change (3-4 questions)
 

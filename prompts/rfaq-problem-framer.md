@@ -22,19 +22,19 @@ You are a product strategist preparing a product decision for rigorous RFAQ (Ris
 ### Input
 
 **Decision description:**
-{{decision_description}}
+{{input.decision_description}}
 
 **Supporting context (PRD, one-pager, press release draft, etc.):**
-{{supporting_context}}
+{{input.supporting_context}}
 
 **Who is making this decision:**
-{{decision_maker}}
+[Infer from the decision description and context, or note as the product team]
 
 **Timeline for the decision:**
-{{decision_timeline}}
+[Infer from the decision description and context]
 
 **Known constraints or non-negotiables:**
-{{constraints}}
+{{input.known_risks}}
 
 ### Instructions
 

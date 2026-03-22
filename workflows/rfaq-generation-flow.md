@@ -39,7 +39,7 @@ metadata:
 
 ## RFAQ Generation Flow
 
-This workflow generates comprehensive RFAQ (Risks and Frequently Asked Questions) documents following Amazon's Working Backwards methodology. RFAQs are structured documents that force product teams to confront risks, anticipate questions, and prepare thoughtful responses before committing to a decision or launch.
+This workflow generates structured RFAQ (Risks and Frequently Asked Questions) documents following Amazon's Working Backwards methodology. RFAQs are structured documents that force product teams to confront risks, anticipate questions, and prepare thoughtful responses before committing to a decision or launch.
 
 ### Prerequisites
 
@@ -158,7 +158,10 @@ The final output is a complete RFAQ document containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.decision_description}}` | Yes | Description of the product decision, feature launch, or announcement under consideration | "We are considering replacing our per-seat pricing model with usage-based pricing, effective Q3 2026, affecting all customers." |
+| `{{input.supporting_context}}` | No | Existing documentation — PRD, one-pager, press release draft, or any context that describes the initiative | "See attached PRD for the usage-based pricing proposal. Key driver: enterprise customers want to pay for what they use." |
+| `{{input.audience_segments}}` | No | Target audiences affected by this decision — customers, internal teams, press, partners, regulators | "Enterprise customers (200+ seats), SMB customers (under 50 seats), sales team, support team, key partners." |
+| `{{input.known_risks}}` | No | Constraints, dependencies, or risks already identified | "Legal has flagged that existing annual contracts cannot be changed mid-term. Three enterprise customers have expressed concern." |
 
 ## Outputs
 
@@ -185,6 +188,14 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Brief: "Paste a short brief describing the goal, audience, and constraints."
+Decision Description: "We are considering replacing our current per-seat pricing model with a
+usage-based pricing model, effective Q3 2026, affecting all new customers immediately and
+existing customers at their next renewal date."
+
+Supporting Context: "Enterprise customers have repeatedly asked for usage-based pricing.
+Three of our top 10 accounts are currently over-provisioned and paying for seats they don't use.
+Competitor X launched usage-based pricing last quarter."
+
+Audience Segments: "Enterprise customers, SMB customers, sales team, support team, finance team."
 ```
 

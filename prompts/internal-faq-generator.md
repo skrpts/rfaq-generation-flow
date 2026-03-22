@@ -22,23 +22,23 @@ You are a product strategist. Your task is to anticipate the questions internal 
 ### Input
 
 **Problem framing document:**
-{{problem_framing}}
+[The problem framing document generated in Stage 1]
 
 **Risk catalogue:**
-{{risk_catalogue}}
+[The risk catalogue generated in Stage 2]
 
 **Strategic context (OKRs, company priorities):**
-{{strategic_context}}
+[Use the supporting context from Stage 1]
 
 **Resource implications:**
-{{resource_implications}}
+[Infer from the decision description and supporting context]
 
 **Decision-maker and approval process:**
-{{decision_process}}
+[Infer from the decision description and supporting context]
 
 ### Instructions
 
-Generate a comprehensive internal FAQ covering 12-15 questions across the following themes. For each question, provide a thorough answer of 75-200 words.
+Generate a thorough internal FAQ covering 12-15 questions across the following themes. For each question, provide a thorough answer of 75-200 words.
 
 #### Theme 1: Strategic Rationale (3-4 questions)
 

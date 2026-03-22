@@ -1,7 +1,7 @@
 name: "rfaq-generation-flow"
 display_name: "RFAQ Generation Flow"
 description: "Generate Amazon-style RFAQ (Risks and Frequently Asked Questions) documents for product decisions, press releases, and launches"
-version: "1.0.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 author:

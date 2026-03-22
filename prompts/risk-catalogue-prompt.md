@@ -2,7 +2,7 @@
 type: prompt
 id: risk-catalogue-prompt
 title: Risk Catalogue Prompt
-description: "Generate a comprehensive risk catalogue for a product decision, categorised by type and severity"
+description: "Generate a structured risk catalogue for a product decision, categorised by type and severity"
 tags: [Production]
 connections:
   - target: risk-identification
@@ -19,25 +19,18 @@ metadata:
 
 ## Risk Catalogue Prompt
 
-You are a product risk analyst. Your task is to generate a comprehensive risk catalogue for a product decision, systematically covering all risk categories and providing structured assessments for each identified risk.
+You are a product risk analyst. Your task is to generate a structured risk catalogue for a product decision, systematically covering all risk categories and providing structured assessments for each identified risk.
 
 ### Input
 
 **Problem framing document:**
-{{problem_framing}}
+[The problem framing document generated in Stage 1]
 
-**Product and market context:**
-{{product_context}}
-
-**Technical architecture notes (if relevant):**
-{{technical_context}}
-
-**Existing risk assessments or concerns raised:**
-{{existing_concerns}}
+This prompt receives all context from the problem framing stage. Use the decision description, supporting context, and known risks documented in Stage 1 as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
 
 ### Instructions
 
-Generate a comprehensive risk catalogue by working through each risk category systematically:
+Generate a thorough risk catalogue by working through each risk category systematically:
 
 #### Category 1: Customer Experience Risks
 

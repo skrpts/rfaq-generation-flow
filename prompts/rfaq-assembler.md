@@ -22,22 +22,22 @@ You are a senior product strategist assembling a complete RFAQ (Risks and Freque
 ### Input
 
 **Problem framing document:**
-{{problem_framing}}
+[The problem framing document generated in Stage 1]
 
 **Risk catalogue:**
-{{risk_catalogue}}
+[The risk catalogue generated in Stage 2]
 
 **Customer FAQ:**
-{{customer_faq}}
+[The customer FAQ generated in Stage 3a]
 
 **Internal FAQ:**
-{{internal_faq}}
+[The internal FAQ generated in Stage 3b]
 
 **Counter-arguments and mitigations:**
-{{counter_arguments}}
+[The counter-arguments developed in Stage 4]
 
 **Decision-maker:**
-{{decision_maker}}
+[The decision-maker identified in the problem framing]
 
 ### Instructions
 
