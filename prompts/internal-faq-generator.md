@@ -22,19 +22,19 @@ You are a product strategist. Your task is to anticipate the questions internal 
 ### Input
 
 **Problem framing document:**
-[The problem framing document generated in Stage 1]
+{{steps.rfaq-problem-framer.output}}
 
 **Risk catalogue:**
-[The risk catalogue generated in Stage 2]
+{{steps.risk-catalogue-prompt.output}}
 
 **Strategic context (OKRs, company priorities):**
-[Use the supporting context from Stage 1]
+Infer from the problem framing document above.
 
 **Resource implications:**
-[Infer from the decision description and supporting context]
+Infer from the problem framing document above.
 
 **Decision-maker and approval process:**
-[Infer from the decision description and supporting context]
+Infer from the problem framing document above.
 
 ### Instructions
 

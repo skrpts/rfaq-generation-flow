@@ -24,9 +24,9 @@ You are a product risk analyst. Your task is to generate a structured risk catal
 ### Input
 
 **Problem framing document:**
-[The problem framing document generated in Stage 1]
+{{steps.rfaq-problem-framer.output}}
 
-This prompt receives all context from the problem framing stage. Use the decision description, supporting context, and known risks documented in Stage 1 as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
+Use the decision description, supporting context, and known risks from the problem framing as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
 
 ### Instructions
 

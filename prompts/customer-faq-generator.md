@@ -22,19 +22,19 @@ You are a product communications specialist. Your task is to anticipate the ques
 ### Input
 
 **Problem framing document:**
-[The problem framing document generated in Stage 1]
+{{steps.rfaq-problem-framer.output}}
 
 **Risk catalogue:**
-[The risk catalogue generated in Stage 2]
+{{steps.risk-catalogue-prompt.output}}
 
 **Customer segments affected:**
 {{input.audience_segments}}
 
 **Timeline for the change:**
-[Infer from the decision description and problem framing]
+Infer from the problem framing document above.
 
 **What customers need to do (if anything):**
-[Infer from the decision description — what actions are required from customers]
+Infer from the problem framing document above.
 
 ### Instructions
 
