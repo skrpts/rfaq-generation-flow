@@ -19,9 +19,11 @@ tags:
   - "decision-making"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "product-requirements"
     - "business-strategy"
 
