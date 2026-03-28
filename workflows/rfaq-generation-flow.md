@@ -21,6 +21,8 @@ connections:
     type: uses
   - target: rfaq-assembler
     type: uses
+  - target: requirements-structuring
+    type: uses
   - target: llm-service
     type: runs_on
   - target: rfaq-methodology-reference
