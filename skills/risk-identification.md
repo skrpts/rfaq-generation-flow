@@ -3,7 +3,7 @@ type: skill
 id: risk-identification
 title: Risk Identification
 description: "Systematic identification of risks, assumptions, and failure modes for product decisions"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:risk, design:product]
 connections:
   - target: llm-service
     type: runs_on

@@ -3,7 +3,7 @@ type: prompt
 id: rfaq-problem-framer
 title: RFAQ Problem Framer
 description: "Frame the product decision or announcement for structured RFAQ analysis"
-tags: [Production]
+tags: [Production, analysis:risk, design:product]
 connections:
   - target: risk-identification
     type: derived_from

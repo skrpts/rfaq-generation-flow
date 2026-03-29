@@ -3,7 +3,7 @@ type: skill
 id: faq-anticipation
 title: FAQ Anticipation
 description: "Anticipating likely questions from customers, stakeholders, and internal teams about product decisions"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:risk, design:product]
 connections:
   - target: llm-service
     type: runs_on

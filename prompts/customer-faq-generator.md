@@ -3,7 +3,7 @@ type: prompt
 id: customer-faq-generator
 title: Customer FAQ Generator
 description: "Generate anticipated customer FAQs with prepared answers for a product decision or announcement"
-tags: [Production]
+tags: [Production, writing:communication, analysis:risk]
 connections:
   - target: faq-anticipation
     type: derived_from

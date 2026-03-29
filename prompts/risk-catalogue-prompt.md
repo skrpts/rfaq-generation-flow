@@ -3,7 +3,7 @@ type: prompt
 id: risk-catalogue-prompt
 title: Risk Catalogue Prompt
 description: "Generate a structured risk catalogue for a product decision, categorised by type and severity"
-tags: [Production]
+tags: [Production, analysis:risk, design:product]
 connections:
   - target: risk-identification
     type: derived_from

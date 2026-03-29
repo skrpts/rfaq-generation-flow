@@ -3,7 +3,7 @@ type: workflow
 id: rfaq-generation-flow
 title: RFAQ Generation Flow
 description: "Multi-stage pipeline that generates Amazon-style RFAQ documents for product decisions, press releases, and launches"
-tags: [Production, Tested]
+tags: [Production, Tested, writing:copy, analysis:risk]
 connections:
   - target: risk-identification
     type: uses

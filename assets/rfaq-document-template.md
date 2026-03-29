@@ -3,7 +3,7 @@ type: asset
 id: rfaq-document-template
 title: RFAQ Document Template
 description: "Template for the complete RFAQ document"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, analysis:risk, design:product]
 connections: []
 metadata:
   asset_type: "template"
