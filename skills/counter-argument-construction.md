@@ -3,7 +3,7 @@ type: skill
 id: counter-argument-construction
 title: Counter-Argument Construction
 description: "Building rigorous counter-arguments and mitigations for identified risks and objections"
-tags: [Production, Tested, writing:academic, analysis:risk]
+tags: [Production, Tested, Academic, Risk]
 connections:
   - target: llm-service
     type: runs_on

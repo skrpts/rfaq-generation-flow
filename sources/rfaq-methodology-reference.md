@@ -3,7 +3,7 @@ type: source
 id: rfaq-methodology-reference
 title: RFAQ Methodology Reference
 description: "Reference guide to RFAQ methodology, Amazon's Working Backwards process, and structured risk-based decision-making"
-tags: [Production, Customer-Facing, analysis:risk, design:product]
+tags: [Production, Customer-Facing, Research, Risk]
 connections: []
 metadata:
   source_type: "reference-material"

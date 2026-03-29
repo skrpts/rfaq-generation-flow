@@ -3,7 +3,7 @@ type: prompt
 id: rfaq-assembler
 title: RFAQ Assembler
 description: "Assemble all RFAQ components into a complete, structured RFAQ document with executive summary and decision recommendation"
-tags: [Production, communication:stakeholder, analysis:risk]
+tags: [Production, Communication, Risk]
 connections:
   - target: counter-argument-construction
     type: derived_from

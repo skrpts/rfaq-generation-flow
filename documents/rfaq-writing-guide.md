@@ -3,7 +3,7 @@ type: document
 id: rfaq-writing-guide
 title: RFAQ Writing Guide
 description: "Detailed guide to writing effective RFAQ documents with best practices, examples, and quality criteria"
-tags: [Production, Customer-Facing, analysis:risk, design:product]
+tags: [Production, Customer-Facing, Learning, Writing]
 connections:
   - target: rfaq-methodology-reference
     type: references

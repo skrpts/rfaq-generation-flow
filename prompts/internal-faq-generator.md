@@ -3,7 +3,7 @@ type: prompt
 id: internal-faq-generator
 title: Internal FAQ Generator
 description: "Generate anticipated internal and stakeholder FAQs with prepared answers for a product decision"
-tags: [Production, writing:communication, analysis:risk]
+tags: [Production, Communication, Risk]
 connections:
   - target: faq-anticipation
     type: derived_from

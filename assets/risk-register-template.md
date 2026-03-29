@@ -3,7 +3,7 @@ type: asset
 id: risk-register-template
 title: Risk Register Template
 description: "Template for cataloguing and tracking identified risks with severity, likelihood, and mitigation status"
-tags: [Production, Customer-Facing, analysis:risk, design:product]
+tags: [Production, Customer-Facing, Risk, Planning]
 connections: []
 metadata:
   asset_type: "template"
