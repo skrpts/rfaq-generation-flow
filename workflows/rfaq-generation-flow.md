@@ -33,11 +33,11 @@ connections:
     type: references
   - target: risk-register-template
     type: references
+  - target: stakeholder-analysis
 metadata:
   estimated_duration: "20-30 minutes"
   avg_tokens: 14000
   trigger: manual
-  - target: stakeholder-analysis
     type: uses
 ---
 
