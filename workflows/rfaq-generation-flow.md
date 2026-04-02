@@ -37,6 +37,8 @@ metadata:
   estimated_duration: "20-30 minutes"
   avg_tokens: 14000
   trigger: manual
+  - target: stakeholder-analysis
+    type: uses
 ---
 
 ## RFAQ Generation Flow
