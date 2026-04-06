@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: counter-argument-construction
     type: uses
-  - target: rfaq-problem-framer
-    type: uses
-  - target: risk-catalogue-prompt
-    type: uses
-  - target: customer-faq-generator
-    type: uses
-  - target: internal-faq-generator
-    type: uses
-  - target: rfaq-assembler
-    type: uses
   - target: requirements-structuring
     type: uses
   - target: llm-service
