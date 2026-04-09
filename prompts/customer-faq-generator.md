@@ -22,10 +22,10 @@ You are a product communications specialist. Your task is to anticipate the ques
 ### Input
 
 **Problem framing document:**
-{{steps.rfaq-problem-framer.output}}
+{{steps.Risk Identification.output}}
 
 **Risk catalogue:**
-{{steps.risk-catalogue-prompt.output}}
+{{steps.Risk Identification.output}}
 
 **Customer segments affected:**
 {{input.audience_segments}}

@@ -22,10 +22,10 @@ You are a product strategist. Your task is to anticipate the questions internal 
 ### Input
 
 **Problem framing document:**
-{{steps.rfaq-problem-framer.output}}
+{{steps.Risk Identification.output}}
 
 **Risk catalogue:**
-{{steps.risk-catalogue-prompt.output}}
+{{steps.Risk Identification.output}}
 
 **Strategic context (OKRs, company priorities):**
 Infer from the problem framing document above.

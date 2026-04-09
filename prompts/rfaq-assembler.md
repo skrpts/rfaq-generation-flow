@@ -22,16 +22,16 @@ You are a senior product strategist assembling a complete RFAQ (Risks and Freque
 ### Input
 
 **Problem framing document:**
-{{steps.rfaq-problem-framer.output}}
+{{steps.Risk Identification.output}}
 
 **Risk catalogue:**
-{{steps.risk-catalogue-prompt.output}}
+{{steps.Risk Identification.output}}
 
 **Customer FAQ:**
-{{steps.customer-faq-generator.output}}
+{{steps.FAQ Anticipation.output}}
 
 **Internal FAQ:**
-{{steps.internal-faq-generator.output}}
+{{steps.FAQ Anticipation.output}}
 
 **Counter-arguments and mitigations:**
 Synthesise from the risk catalogue and FAQ outputs above.
