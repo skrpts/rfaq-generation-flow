@@ -24,7 +24,7 @@ You are a product risk analyst. Your task is to generate a structured risk catal
 ### Input
 
 **Problem framing document:**
-{{steps.Risk Identification.output}}
+{{steps.previous.output}}
 
 Use the decision description, supporting context, and known risks from the problem framing as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
 
