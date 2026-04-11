@@ -4,6 +4,25 @@ id: rfaq-problem-framer
 title: RFAQ Problem Framer
 description: "Frame the product decision or announcement for structured RFAQ analysis"
 tags: [Production, Risk, Planning]
+inputs:
+  decision_description:
+    label: "Decision Description"
+    description: "The decision that was made, including context and alternatives considered"
+    example: "Decided to use PostgreSQL instead of MongoDB for the user data store"
+    required: true
+    type: text
+  supporting_context:
+    label: "Supporting Context"
+    description: "Additional context to support the analysis"
+    example: "Company recently transitioned to hybrid work model"
+    required: true
+    type: text
+  known_risks:
+    label: "Known Risks"
+    description: "Risks already identified for this initiative"
+    example: "Key engineer leaving in Q3. API dependency on third party with no SLA."
+    required: true
+    type: text
 connections:
   - target: risk-identification
     type: derived_from

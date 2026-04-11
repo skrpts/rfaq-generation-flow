@@ -4,6 +4,13 @@ id: customer-faq-generator
 title: Customer FAQ Generator
 description: "Generate anticipated customer FAQs with prepared answers for a product decision or announcement"
 tags: [Production, Communication, Risk]
+inputs:
+  audience_segments:
+    label: "Audience Segments"
+    description: "Defined audience segments to target"
+    example: "Technical decision-makers, End users, Budget holders"
+    required: true
+    type: text
 connections:
   - target: faq-anticipation
     type: derived_from
