@@ -27,6 +27,18 @@ metadata:
   estimated_duration: "20-30 minutes"
   avg_tokens: 14000
   trigger: manual
+execution:
+  - skill: "risk-identification"
+    step_type: "synthesis"
+  - skill: "faq-anticipation"
+    step_type: "generation"
+    input_from: "risk-identification"
+  - skill: "counter-argument-construction"
+    step_type: "generation"
+    input_from: "faq-anticipation"
+  - skill: "requirements-structuring"
+    step_type: "synthesis"
+    input_from: "counter-argument-construction"
 ---
 
 ## RFAQ Generation Flow
