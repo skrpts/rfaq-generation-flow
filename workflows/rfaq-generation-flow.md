@@ -27,6 +27,12 @@ metadata:
   estimated_duration: "20-30 minutes"
   avg_tokens: 14000
   trigger: manual
+output_step: "requirements-structuring"
+composite_steps:
+  - "risk-identification"
+  - "faq-anticipation"
+  - "counter-argument-construction"
+  - "requirements-structuring"
 execution:
   - skill: "risk-identification"
     step_type: "synthesis"
