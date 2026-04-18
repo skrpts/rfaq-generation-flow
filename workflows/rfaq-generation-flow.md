@@ -13,6 +13,10 @@ connections:
     type: uses
   - target: requirements-structuring
     type: uses
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
   - target: llm-service
     type: runs_on
   - target: rfaq-methodology-reference
@@ -27,21 +31,29 @@ metadata:
   estimated_duration: "20-30 minutes"
   avg_tokens: 14000
   trigger: manual
-output_step: "requirements-structuring"
+output_step: "language-polish"
 composite_steps:
   - "risk-identification"
   - "faq-anticipation"
   - "counter-argument-construction"
   - "requirements-structuring"
+  - "consistency-check"
 execution:
   - skill: "risk-identification"
     step_type: "synthesis"
+    prompt: "risk-catalogue-prompt"
   - skill: "faq-anticipation"
     step_type: "generation"
+    prompt: "customer-faq-generator"
   - skill: "counter-argument-construction"
     step_type: "generation"
   - skill: "requirements-structuring"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
 ---
 
 ## RFAQ Generation Flow
