@@ -4,6 +4,32 @@ id: risk-catalogue-prompt
 title: Risk Catalogue Prompt
 description: "Generate a structured risk catalogue for a product decision, categorised by type and severity"
 tags: [Production, Risk, Planning]
+inputs:
+  product_decision:
+    label: "Product Decision"
+    description: "The product decision, announcement, or change to analyse for risks"
+    example: "We are deprecating the legacy API and migrating all customers to v3 by Q4"
+    required: true
+    type: text
+  stakeholders:
+    label: "Stakeholders"
+    description: "Key stakeholders affected by this decision"
+    example: "Engineering teams, enterprise customers, partner integrations, support team"
+    required: false
+    type: text
+inputs:
+  product_decision:
+    label: "Product Decision"
+    description: "The product decision, announcement, or change to analyse for risks"
+    example: "We are deprecating the legacy API and migrating all customers to v3 by Q4"
+    required: true
+    type: text
+  stakeholders:
+    label: "Stakeholders"
+    description: "Key stakeholders affected by this decision"
+    example: "Engineering teams, enterprise customers, partner integrations, support team"
+    required: false
+    type: text
 connections:
   - target: risk-identification
     type: derived_from
@@ -24,6 +50,16 @@ You are a product risk analyst. Your task is to generate a structured risk catal
 ### Input
 
 **Problem framing document:**
+**Decision:** {{input.product_decision}}
+**Stakeholders:** {{input.stakeholders}}
+
+### Analysis
+
+**Decision:** {{input.product_decision}}
+**Stakeholders:** {{input.stakeholders}}
+
+### Analysis
+
 {{steps.previous.output}}
 
 Use the decision description, supporting context, and known risks from the problem framing as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
