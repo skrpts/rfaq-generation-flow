@@ -46,13 +46,17 @@ execution:
     step_type: "generation"
     prompt: "customer-faq-generator"
   - skill: "counter-argument-construction"
+    prompt: "rfaq-assembler"
     step_type: "generation"
   - skill: "requirements-structuring"
+    prompt: "structure-requirements"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "consistency-check"
+      prompt: "check-consistency"
       step_type: "review"
 ---
 
