@@ -2,7 +2,7 @@ id: "8649b90a-122b-49f0-affd-8663587dfda7"
 name: "rfaq-generation-flow"
 display_name: "RFAQ Generation Flow"
 description: "Generate Amazon-style RFAQ (Risks and Frequently Asked Questions) documents for product decisions, press releases, and launches"
-version: "1.1.13"
+version: "1.1.14"
 engine: ">=1.0.0"
 
 author:
