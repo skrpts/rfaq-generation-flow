@@ -42,18 +42,23 @@ execution:
   - skill: "risk-identification"
     step_type: "synthesis"
     prompt: "risk-catalogue-prompt"
+    output: { name: "risk_catalogue", type: "text" }
   - skill: "faq-anticipation"
     step_type: "generation"
     prompt: "customer-faq-generator"
+    output: { name: "faqs", type: "list" }
   - skill: "counter-argument-construction"
     prompt: "rfaq-assembler"
     step_type: "generation"
+    output: { name: "rfaq", type: "text" }
   - skill: "requirements-structuring"
     prompt: "structure-requirements"
     step_type: "synthesis"
+    output: { name: "requirements", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_rfaq", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -61,6 +66,7 @@ execution:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
