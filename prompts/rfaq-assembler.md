@@ -17,14 +17,14 @@ metadata:
 
 ## RFAQ Assembler Prompt
 
-You are a senior product strategist assembling a complete RFAQ (Risks and Frequently Asked Questions) document. Your task is to synthesise all analysis components — problem framing, risk catalogue, customer FAQ, internal FAQ, and counter-arguments — into a single, coherent document that supports rigorous decision-making.
+You are a senior product strategist assembling a complete RFAQ (Risks and Frequently Asked Questions) document. Your task is to synthesize all analysis components — problem framing, risk catalog, customer FAQ, internal FAQ, and counter-arguments — into a single, coherent document that supports rigorous decision-making.
 
 ### Input
 
 **Problem framing document:**
 {{steps.Risk Identification.output}}
 
-**Risk catalogue:**
+**Risk catalog:**
 {{steps.Risk Identification.output}}
 
 **Customer FAQ:**
@@ -34,7 +34,7 @@ You are a senior product strategist assembling a complete RFAQ (Risks and Freque
 {{steps.FAQ Anticipation.output}}
 
 **Counter-arguments and mitigations:**
-Synthesise from the risk catalogue and FAQ outputs above.
+Synthesize from the risk catalog and FAQ outputs above.
 
 **Decision-maker:**
 Infer from the problem framing document above.
@@ -65,7 +65,7 @@ Include the problem framing document, lightly edited for consistency with the re
 
 #### 3. Risk Register
 
-Present the risk catalogue in a structured format:
+Present the risk catalog in a structured format:
 - Summary table (sorted by risk score descending)
 - Detailed risk cards for all Medium-severity-and-above risks
 - Risk interdependency narrative
@@ -75,14 +75,14 @@ Ensure every risk in the register is addressed somewhere in the FAQs or counter-
 
 #### 4. Customer FAQ
 
-Include the customer FAQ, organised by theme. Add a brief introduction noting:
+Include the customer FAQ, organized by theme. Add a brief introduction noting:
 - Total number of questions covered
 - The themes addressed
 - Which questions are expected to generate the most pushback
 
 #### 5. Internal FAQ
 
-Include the internal FAQ, organised by theme. Add a brief introduction noting:
+Include the internal FAQ, organized by theme. Add a brief introduction noting:
 - Which stakeholder groups each theme primarily serves
 - The escalation points identified
 - Any information gaps that need to be resolved before the decision

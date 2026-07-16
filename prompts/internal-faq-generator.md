@@ -24,7 +24,7 @@ You are a product strategist. Your task is to anticipate the questions internal 
 **Problem framing document:**
 {{steps.Risk Identification.output}}
 
-**Risk catalogue:**
+**Risk catalog:**
 {{steps.Risk Identification.output}}
 
 **Strategic context (OKRs, company priorities):**
@@ -67,7 +67,7 @@ Risk-conscious stakeholders will probe the downside:
 - What are the top 3 risks and how are we mitigating them?
 - How will we know if this is working? What are the success metrics and decision checkpoints?
 
-Draft answers that demonstrate rigorous risk thinking. Reference the risk catalogue where appropriate.
+Draft answers that demonstrate rigorous risk thinking. Reference the risk catalog where appropriate.
 
 #### Theme 4: Customer and Market Impact (2-3 questions)
 
@@ -81,7 +81,7 @@ Draft answers that acknowledge uncertainty where it exists and provide specific 
 #### Theme 5: Devil's Advocate Questions (2-3 questions)
 
 These are the questions that challenge the decision itself:
-- "Are we solving the right problem, or are we optimising for the wrong metric?"
+- "Are we solving the right problem, or are we optimizing for the wrong metric?"
 - "What would make us reverse this decision?"
 - "Is this a solution looking for a problem?"
 
@@ -89,7 +89,7 @@ Draft answers that take the challenge seriously. These questions are not hostile
 
 ### Output Format
 
-Organise the FAQ by theme with clear headings. For each Q&A pair:
+Organize the FAQ by theme with clear headings. For each Q&A pair:
 
 **Q: [The question as an internal stakeholder would ask it]**
 

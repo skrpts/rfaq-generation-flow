@@ -70,7 +70,7 @@ Good: "We are considering replacing our current per-seat pricing model with a us
 
 Classify this as:
 - **One-way door (Type 1):** Irreversible or very costly to reverse. These decisions require thorough RFAQ analysis. Examples: pricing model changes, platform migrations, market exits.
-- **Two-way door (Type 2):** Easily reversible with limited consequences. These can be analysed more lightly. Examples: UI changes with feature flags, A/B testable features, opt-in beta programmes.
+- **Two-way door (Type 2):** Easily reversible with limited consequences. These can be analyzed more lightly. Examples: UI changes with feature flags, A/B testable features, opt-in beta programs.
 
 Explain your classification with one sentence of reasoning.
 
@@ -85,7 +85,7 @@ For each group, note their likely initial reaction: positive, neutral, concerned
 
 #### 4. What is at Stake
 
-Describe what the organisation gains if this decision succeeds, and what it loses if it fails:
+Describe what the organization gains if this decision succeeds, and what it loses if it fails:
 - **Upside scenario:** What does success look like in 6 months? Quantify where possible.
 - **Downside scenario:** What does failure look like in 6 months? Quantify where possible.
 - **Status quo cost:** What happens if we do nothing? Is the status quo sustainable?
@@ -94,7 +94,7 @@ Describe what the organisation gains if this decision succeeds, and what it lose
 
 List any non-negotiable constraints:
 - Regulatory requirements that cannot be waived
-- Contractual commitments that must be honoured
+- Contractual commitments that must be honored
 - Technical limitations that are fixed within the decision timeline
 - Resource constraints (budget, headcount, skills)
 
@@ -113,6 +113,6 @@ Produce the problem framing document in structured markdown with clear headings.
 ### Constraints
 
 - Do not take a position on whether the decision is correct — your role is to frame it for analysis, not to advocate for or against it
-- If the decision description is too vague to analyse, return a set of clarifying questions rather than making assumptions
+- If the decision description is too vague to analyze, return a set of clarifying questions rather than making assumptions
 - Be explicit about what you know vs. what you are inferring from the context
 - If the decision is clearly a Type 2 (two-way door), note that a full RFAQ may be disproportionate and suggest a lighter-weight analysis if appropriate

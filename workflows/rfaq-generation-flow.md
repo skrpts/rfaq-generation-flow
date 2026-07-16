@@ -99,7 +99,7 @@ Before running this workflow, prepare:
 - Define the audience segments whose questions and concerns must be anticipated: customers, internal stakeholders, press, partners, regulators
 - Output: a structured problem statement ready for risk and FAQ analysis
 
-**Error handling:** If the problem description is too vague to analyse meaningfully, return a set of clarifying questions rather than proceeding with assumptions.
+**Error handling:** If the problem description is too vague to analyze meaningfully, return a set of clarifying questions rather than proceeding with assumptions.
 
 #### Stage 2: Risk Cataloguing
 
@@ -117,7 +117,7 @@ Before running this workflow, prepare:
 - For each risk, assess severity, likelihood, and reversibility
 - Identify risk interdependencies — where one risk materialising triggers others
 - Propose initial mitigation strategies for each significant risk
-- Output: a structured risk catalogue with severity ratings and mitigations
+- Output: a structured risk catalog with severity ratings and mitigations
 
 #### Stage 3: FAQ Generation (Parallel)
 
@@ -152,7 +152,7 @@ Run customer and internal FAQ generation in parallel:
 **Skill:** `counter-argument-construction`
 **References:** `rfaq-writing-guide`
 
-- Review the risk catalogue and FAQ responses for weaknesses
+- Review the risk catalog and FAQ responses for weaknesses
 - For each high-severity risk, develop a rigorous counter-argument: why is the decision still correct despite this risk?
 - For each hostile question, stress-test the drafted answer: would it survive a follow-up challenge?
 - Identify any arguments that are weak — where the honest answer is "we do not have a good response to this yet" — and flag these for further work
@@ -164,7 +164,7 @@ Run customer and internal FAQ generation in parallel:
 **References:** `rfaq-document-template`
 
 - Assemble all components into a complete RFAQ document following the standard template
-- Structure: Problem Statement, Decision Overview, Risk Register (categorised), Customer FAQ, Internal FAQ, Counter-Arguments, Unresolved Concerns, Decision Recommendation
+- Structure: Problem Statement, Decision Overview, Risk Register (categorized), Customer FAQ, Internal FAQ, Counter-Arguments, Unresolved Concerns, Decision Recommendation
 - Ensure internal consistency — risks mentioned in one section should be addressed in the FAQ, and FAQ answers should not contradict the risk assessments
 - Include a decision recommendation: proceed, proceed with modifications, defer pending further research, or do not proceed
 - Add an executive summary at the top: 3-5 sentences covering the decision, the key risks, and the recommendation
@@ -175,7 +175,7 @@ The final output is a complete RFAQ document containing:
 
 1. **Executive summary** — decision, key risks, recommendation
 2. **Problem statement** — what is being decided and why
-3. **Risk register** — categorised risks with severity, likelihood, mitigations
+3. **Risk register** — categorized risks with severity, likelihood, mitigations
 4. **Customer FAQ** — 10-20 anticipated customer questions with prepared answers
 5. **Internal FAQ** — 10-15 anticipated internal questions with prepared responses
 6. **Counter-arguments** — rigorous responses to the strongest objections
@@ -185,7 +185,7 @@ The final output is a complete RFAQ document containing:
 ### Error Handling
 
 - **Insufficient context:** Return clarifying questions; do not generate an RFAQ from vague inputs
-- **Overwhelming risks:** If the risk catalogue is extensive, prioritise the top 10 by severity x likelihood rather than listing everything
+- **Overwhelming risks:** If the risk catalog is extensive, prioritize the top 10 by severity x likelihood rather than listing everything
 - **Contradictory information:** Surface contradictions in the input data explicitly rather than silently resolving them
 - **Unresolvable concerns:** It is acceptable and valuable for an RFAQ to conclude "we cannot adequately mitigate this risk — the decision should be deferred until we can"
 
@@ -209,7 +209,7 @@ The final output is a complete RFAQ document containing:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

@@ -31,7 +31,7 @@ You are a product communications specialist. Your task is to anticipate the ques
 **Problem framing document:**
 {{steps.Risk Identification.output}}
 
-**Risk catalogue:**
+**Risk catalog:**
 {{steps.Risk Identification.output}}
 
 **Customer segments affected:**
@@ -99,7 +99,7 @@ Draft answers that take the question seriously. Do not be defensive. Acknowledge
 
 ### Output Format
 
-Organise the FAQ by theme with clear headings. For each Q&A pair:
+Organize the FAQ by theme with clear headings. For each Q&A pair:
 
 **Q: [The question as a customer would ask it]**
 

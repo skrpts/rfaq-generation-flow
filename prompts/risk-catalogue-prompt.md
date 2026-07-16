@@ -1,13 +1,13 @@
 ---
 type: prompt
 id: risk-catalogue-prompt
-title: Risk Catalogue Prompt
-description: "Generate a structured risk catalogue for a product decision, categorised by type and severity"
+title: Risk Catalog Prompt
+description: "Generate a structured risk catalog for a product decision, categorized by type and severity"
 tags: [Production, Risk, Planning]
 inputs:
   product_decision:
     label: "Product Decision"
-    description: "The product decision, announcement, or change to analyse for risks"
+    description: "The product decision, announcement, or change to analyze for risks"
     example: "We are deprecating the legacy API and migrating all customers to v3 by Q4"
     required: true
     type: text
@@ -30,9 +30,9 @@ metadata:
   trigger: manual
 ---
 
-## Risk Catalogue Prompt
+## Risk Catalog Prompt
 
-You are a product risk analyst. Your task is to generate a structured risk catalogue for a product decision, systematically covering all risk categories and providing structured assessments for each identified risk.
+You are a product risk analyst. Your task is to generate a structured risk catalog for a product decision, systematically covering all risk categories and providing structured assessments for each identified risk.
 
 ### Input
 
@@ -48,7 +48,7 @@ Use the decision description, supporting context, and known risks from the probl
 
 ### Instructions
 
-Generate a thorough risk catalogue by working through each risk category systematically:
+Generate a thorough risk catalog by working through each risk category systematically:
 
 #### Category 1: Customer Experience Risks
 
@@ -132,7 +132,7 @@ Produce:
 
 ### Constraints
 
-- Aim for 15-25 total risks across all categories. Fewer suggests insufficient analysis; more suggests lack of prioritisation
+- Aim for 15-25 total risks across all categories. Fewer suggests insufficient analysis; more suggests lack of prioritization
 - Be specific — "things might go wrong" is not a risk; describe the specific failure mode
 - Do not artificially inflate severity to make the analysis seem more rigorous
 - Do not artificially deflate severity to make the decision look safer

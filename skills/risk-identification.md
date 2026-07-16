@@ -17,13 +17,13 @@ metadata:
 
 ## Risk Identification
 
-This skill enables the systematic identification and categorisation of risks associated with product decisions, feature launches, and strategic initiatives. It goes beyond surface-level risk listing to uncover hidden assumptions, second-order effects, and failure mode cascades.
+This skill enables the systematic identification and categorization of risks associated with product decisions, feature launches, and strategic initiatives. It goes beyond surface-level risk listing to uncover hidden assumptions, second-order effects, and failure mode cascades.
 
 ### Core Capabilities
 
 #### Multi-Category Risk Scanning
 
-When analysing a product decision, scan for risks across all relevant categories:
+When analyzing a product decision, scan for risks across all relevant categories:
 
 **Customer Experience Risks**
 - Will customers understand the change? Is there a risk of confusion?
@@ -81,7 +81,7 @@ For the decision under analysis:
 ### Output Standards
 
 Risk identification output must include:
-- A categorised risk register with severity (Critical/High/Medium/Low) and likelihood (Almost Certain/Likely/Possible/Unlikely)
+- A categorized risk register with severity (Critical/High/Medium/Low) and likelihood (Almost Certain/Likely/Possible/Unlikely)
 - An assumptions register with validity ratings
 - A pre-mortem narrative describing the most likely failure scenario
 - A reversibility assessment of the overall decision

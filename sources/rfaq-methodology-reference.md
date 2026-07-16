@@ -20,7 +20,7 @@ The process typically produces two documents:
 
 1. **PR/FAQ (Press Release / Frequently Asked Questions):** A fictional press release announcing the product as if it were already launched, followed by anticipated customer and internal questions. The PR/FAQ forces teams to articulate the customer benefit clearly before investing in development.
 
-2. **RFAQ (Risks and Frequently Asked Questions):** A companion document that systematically identifies risks, catalogues anticipated objections, and prepares counter-arguments. The RFAQ ensures teams confront potential failure modes before committing resources.
+2. **RFAQ (Risks and Frequently Asked Questions):** A companion document that systematically identifies risks, catalogs anticipated objections, and prepares counter-arguments. The RFAQ ensures teams confront potential failure modes before committing resources.
 
 This skrpt focuses on the RFAQ component, as it is the more analytically rigorous of the two and is applicable to any significant product decision, not just new product launches.
 
@@ -35,7 +35,7 @@ A standard RFAQ document contains:
 - What is at stake (upside and downside scenarios)
 
 #### Risk Register
-A structured catalogue of risks, typically covering:
+A structured catalog of risks, typically covering:
 - Customer experience risks
 - Technical risks
 - Business and market risks
@@ -77,7 +77,7 @@ A clear recommendation (proceed / proceed with modifications / defer / do not pr
 
 #### 1. Intellectual Honesty
 
-The RFAQ is only valuable if it is honest. An RFAQ that minimises risks to make a decision look better is worse than no RFAQ at all. The most valuable section is often "Unresolved Concerns" — the risks and questions the team cannot yet address.
+The RFAQ is only valuable if it is honest. An RFAQ that minimizes risks to make a decision look better is worse than no RFAQ at all. The most valuable section is often "Unresolved Concerns" — the risks and questions the team cannot yet address.
 
 #### 2. Customer Obsession
 
@@ -115,7 +115,7 @@ Use a lightweight version (problem statement + top 5 risks + key FAQs only) for:
 | Pitfall | Description | Remedy |
 |---------|-------------|--------|
 | Confirmation bias | Writing the RFAQ to justify a decision already made | Write the risk register before forming the recommendation |
-| Shallow risks | Listing risks without analysing their implications | Use "and then what?" analysis to explore second-order effects |
+| Shallow risks | Listing risks without analyzing their implications | Use "and then what?" analysis to explore second-order effects |
 | Defensive FAQ | Answers that deflect rather than address the question | Apply the steel-man technique: strengthen the question before answering |
 | Missing voices | FAQ that only anticipates questions from supporters | Include a hostile question section for every audience segment |
 | Premature resolution | Marking unresolved concerns as "mitigated" without evidence | Maintain separate sections for mitigated risks and unresolved concerns |
