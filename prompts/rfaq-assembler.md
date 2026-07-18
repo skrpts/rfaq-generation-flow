@@ -4,6 +4,24 @@ id: rfaq-assembler
 title: RFAQ Assembler
 description: "Assemble all RFAQ components into a complete, structured RFAQ document with executive summary and decision recommendation"
 tags: [Production, Communication, Risk]
+context_params:
+  problem_framing:
+    label: "Problem Framing"
+    description: "The structured problem-framing document — decision, stakeholders, and scope."
+    required: false
+  risk_catalogue:
+    label: "Risk Catalogue"
+    description: "The structured risk catalogue with severity ratings and mitigations."
+    required: false
+  customer_faq:
+    label: "Customer FAQ"
+    description: "The anticipated customer FAQ with prepared answers."
+    required: false
+  internal_faq:
+    label: "Internal FAQ"
+    description: "The anticipated internal and stakeholder FAQ with prepared answers."
+    required: false
+    default_from_previous: true
 connections:
   - target: counter-argument-construction
     type: derived_from
@@ -22,16 +40,16 @@ You are a senior product strategist assembling a complete RFAQ (Risks and Freque
 ### Input
 
 **Problem framing document:**
-{{steps.Risk Identification.output}}
+{{step.context.problem_framing}}
 
 **Risk catalog:**
-{{steps.Risk Identification.output}}
+{{step.context.risk_catalogue}}
 
 **Customer FAQ:**
-{{steps.FAQ Anticipation.output}}
+{{step.context.customer_faq}}
 
 **Internal FAQ:**
-{{steps.FAQ Anticipation.output}}
+{{step.context.internal_faq}}
 
 **Counter-arguments and mitigations:**
 Synthesize from the risk catalog and FAQ outputs above.

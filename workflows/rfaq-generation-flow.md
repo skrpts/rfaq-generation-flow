@@ -5,9 +5,13 @@ title: RFAQ Generation Flow
 description: "Multi-stage pipeline that generates Amazon-style RFAQ documents for product decisions, press releases, and launches"
 tags: [Production, Tested, Writing, Risk]
 connections:
+  - target: problem-framing
+    type: uses
   - target: risk-identification
     type: uses
   - target: faq-anticipation
+    type: uses
+  - target: internal-faq-anticipation
     type: uses
   - target: counter-argument-construction
     type: uses
@@ -33,24 +37,65 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
+  - "problem-framing"
   - "risk-identification"
   - "faq-anticipation"
+  - "internal-faq-anticipation"
   - "counter-argument-construction"
   - "requirements-structuring"
   - "consistency-check"
 execution:
+  - skill: "problem-framing"
+    step_type: "synthesis"
+    prompt: "rfaq-problem-framer"
+    output: { name: "problem_framing", type: "text" }
   - skill: "risk-identification"
     step_type: "synthesis"
     prompt: "risk-catalogue-prompt"
     output: { name: "risk_catalogue", type: "text" }
+    bindings:
+      problem_framing:
+        from_step: "Problem Framing"
+        field: output
   - skill: "faq-anticipation"
     step_type: "generation"
     prompt: "customer-faq-generator"
     output: { name: "faqs", type: "list" }
+    bindings:
+      problem_framing:
+        from_step: "Problem Framing"
+        field: output
+      risk_catalogue:
+        from_step: "Risk Identification"
+        field: output
+  - skill: "internal-faq-anticipation"
+    step_type: "generation"
+    prompt: "internal-faq-generator"
+    output: { name: "internal_faqs", type: "list" }
+    bindings:
+      problem_framing:
+        from_step: "Problem Framing"
+        field: output
+      risk_catalogue:
+        from_step: "Risk Identification"
+        field: output
   - skill: "counter-argument-construction"
     prompt: "rfaq-assembler"
     step_type: "generation"
     output: { name: "rfaq", type: "text" }
+    bindings:
+      problem_framing:
+        from_step: "Problem Framing"
+        field: output
+      risk_catalogue:
+        from_step: "Risk Identification"
+        field: output
+      customer_faq:
+        from_step: "FAQ Anticipation"
+        field: output
+      internal_faq:
+        from_step: "Internal FAQ Anticipation"
+        field: output
   - skill: "requirements-structuring"
     prompt: "structure-requirements"
     step_type: "synthesis"
@@ -62,6 +107,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Counter-Argument Construction"
+        field: output
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"

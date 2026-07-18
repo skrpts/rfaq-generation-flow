@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.26
+GH#863 Wave 1 — fix K-045 intent/output mismatch: wire the two uninvoked feeder prompts into the pipeline. Add execution steps for `rfaq-problem-framer` (new `problem-framing` skill, runs first) and `internal-faq-generator` (new `internal-faq-anticipation` skill), each with a distinct backing skill so `from_step` bindings resolve. The RFAQ assembler now consumes the problem framing, risk catalogue, customer FAQ, and internal FAQ via explicit `from_step` bindings (positional `{{steps.*}}` refs converted to `context_params` + `{{step.context.*}}`). Re-pin polish-language→1.0.6 and bind its `source` ← the assembled RFAQ so the output step polishes the real deliverable. Adds 2 skills (total 13→15).
+
 ## v1.1.25
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

@@ -4,6 +4,16 @@ id: internal-faq-generator
 title: Internal FAQ Generator
 description: "Generate anticipated internal and stakeholder FAQs with prepared answers for a product decision"
 tags: [Production, Communication, Risk]
+context_params:
+  problem_framing:
+    label: "Problem Framing"
+    description: "The structured problem-framing document — the decision, stakeholders, and scope."
+    required: false
+  risk_catalogue:
+    label: "Risk Catalogue"
+    description: "The risk catalogue — evidence base for the risk and contingency answers."
+    required: false
+    default_from_previous: true
 connections:
   - target: faq-anticipation
     type: derived_from
@@ -22,10 +32,10 @@ You are a product strategist. Your task is to anticipate the questions internal 
 ### Input
 
 **Problem framing document:**
-{{steps.Risk Identification.output}}
+{{step.context.problem_framing}}
 
 **Risk catalog:**
-{{steps.Risk Identification.output}}
+{{step.context.risk_catalogue}}
 
 **Strategic context (OKRs, company priorities):**
 Infer from the problem framing document above.

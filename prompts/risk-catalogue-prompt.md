@@ -17,6 +17,12 @@ inputs:
     example: "Engineering teams, enterprise customers, partner integrations, support team"
     required: false
     type: text
+context_params:
+  problem_framing:
+    label: "Problem Framing"
+    description: "The structured problem-framing document — the basis for risk identification."
+    required: false
+    default_from_previous: true
 connections:
   - target: risk-identification
     type: derived_from
@@ -42,7 +48,7 @@ You are a product risk analyst. Your task is to generate a structured risk catal
 
 ### Analysis
 
-{{steps.previous.output}}
+{{step.context.problem_framing}}
 
 Use the decision description, supporting context, and known risks from the problem framing as the basis for risk identification — they contain the product and market context, technical notes, and any pre-identified concerns needed here.
 

@@ -11,6 +11,16 @@ inputs:
     example: "Technical decision-makers, End users, Budget holders"
     required: true
     type: text
+context_params:
+  problem_framing:
+    label: "Problem Framing"
+    description: "The structured problem-framing document — the decision, stakeholders, and scope."
+    required: false
+  risk_catalogue:
+    label: "Risk Catalogue"
+    description: "The risk catalogue — context for what customers will be concerned about."
+    required: false
+    default_from_previous: true
 connections:
   - target: faq-anticipation
     type: derived_from
@@ -29,10 +39,10 @@ You are a product communications specialist. Your task is to anticipate the ques
 ### Input
 
 **Problem framing document:**
-{{steps.Risk Identification.output}}
+{{step.context.problem_framing}}
 
 **Risk catalog:**
-{{steps.Risk Identification.output}}
+{{step.context.risk_catalogue}}
 
 **Customer segments affected:**
 {{input.audience_segments}}
