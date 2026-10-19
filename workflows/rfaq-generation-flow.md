@@ -246,6 +246,8 @@ The final output is a complete RFAQ document containing:
 | `{{input.supporting_context}}` | No | Existing documentation — PRD, one-pager, press release draft, or any context that describes the initiative | "See attached PRD for the usage-based pricing proposal. Key driver: enterprise customers want to pay for what they use." |
 | `{{input.audience_segments}}` | No | Target audiences affected by this decision — customers, internal teams, press, partners, regulators | "Enterprise customers (200+ seats), SMB customers (under 50 seats), sales team, support team, key partners." |
 | `{{input.known_risks}}` | No | Constraints, dependencies, or risks already identified | "Legal has flagged that existing annual contracts cannot be changed mid-term. Three enterprise customers have expressed concern." |
+| `{{input.stakeholders}}` | No | Key stakeholders affected by this decision | `Engineering teams, enterprise customers, partner integrations, support team` |
+| `{{input.product_decision}}` | Yes | The product decision, announcement, or change to analyze for risks | `We are deprecating the legacy API and migrating all customers to v3 by Q4` |
 
 ## Outputs
 

@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.1.28
+GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. documented product_decision. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
+
+## v1.1.27
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. documented 2 input(s): product_decision, stakeholders. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.1.26
 GH#863 Wave 1 — fix K-045 intent/output mismatch: wire the two uninvoked feeder prompts into the pipeline. Add execution steps for `rfaq-problem-framer` (new `problem-framing` skill, runs first) and `internal-faq-generator` (new `internal-faq-anticipation` skill), each with a distinct backing skill so `from_step` bindings resolve. The RFAQ assembler now consumes the problem framing, risk catalogue, customer FAQ, and internal FAQ via explicit `from_step` bindings (positional `{{steps.*}}` refs converted to `context_params` + `{{step.context.*}}`). Re-pin polish-language→1.0.6 and bind its `source` ← the assembled RFAQ so the output step polishes the real deliverable. Adds 2 skills (total 13→15).
 
