@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#1100 consumer wave batch 5 — declare the data flow these steps were resolving positionally. 2 binding(s) added: `structure-requirements` ← Counter-Argument Construction; `check-consistency` ← Language Polish. Each dependency was also re-pinned to the version that introduced its `source` slot, with checksums resolved from the live catalogue rather than transcribed — a binding against a pin below the slot version is declared but inert, which the canonical scan reports as `execution_bindings_unused_key`.
+
 ## v1.1.28
 GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. documented product_decision. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
 

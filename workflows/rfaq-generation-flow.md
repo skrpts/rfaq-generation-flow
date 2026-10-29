@@ -100,6 +100,10 @@ execution:
     prompt: "structure-requirements"
     step_type: "synthesis"
     output: { name: "requirements", type: "text" }
+    bindings:
+      source:
+        from_step: "Counter-Argument Construction"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -119,6 +123,10 @@ execution:
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
+      bindings:
+        source:
+          from_step: "Language Polish"
+          field: output
 ---
 
 ## RFAQ Generation Flow
